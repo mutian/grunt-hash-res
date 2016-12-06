@@ -1,7 +1,7 @@
 {
   "name": "grunt-hash-res",
   "description": "Hash static resource files (JS, CSS, images, fonts) and replace the reference url.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "git://github.com/mutian/grunt-hash-res.git",
   "author": {
     "name": "Mutian Wang",
