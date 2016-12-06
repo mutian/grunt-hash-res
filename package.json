@@ -1,0 +1,40 @@
+{
+  "name": "grunt-hash-res",
+  "description": "Hash static resource files (JS, CSS, images, fonts) and replace the reference url.",
+  "version": "0.1.0",
+  "homepage": "git://github.com/mutian/grunt-hash-res.git",
+  "author": {
+    "name": "Mutian Wang",
+    "url": "http://mutian.wang/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mutian/grunt-hash-res.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mutian/grunt-hash-res/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "main": "tasks/hash_res.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "files": [
+    "tasks"
+  ]
+}
