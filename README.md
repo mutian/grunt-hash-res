@@ -1,4 +1,7 @@
-# grunt-hash-res v0.1.2
+# grunt-hash-res v0.1.3
+
+[![Build Status: Linux](https://travis-ci.org/mutian/grunt-hash-res.svg?branch=master)](https://travis-ci.org/mutian/grunt-hash-res)
+[![Build Status: Windows](https://ci.appveyor.com/api/projects/status/dcimk39rcyjtg8k8/branch/master?svg=true)](https://ci.appveyor.com/project/mutian/grunt-hash-res/branch/master)
 
 > Hash static resource files (JS, CSS, images, fonts) and replace the reference url
 
