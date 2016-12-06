@@ -1,6 +1,6 @@
-# grunt-hash-res v0.1.1
+# grunt-hash-res v0.1.2
 
-> Hash static resource files (JS, CSS, images, fonts) and replace the reference url.
+> Hash static resource files (JS, CSS, images, fonts) and replace the reference url
 
 
 ## Getting Started
@@ -9,13 +9,13 @@ This plugin requires Grunt `>=0.4.0`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-simple-tpl --save-dev
+npm install grunt-hash-res --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-simple-tpl');
+grunt.loadNpmTasks('grunt-hash-res');
 ```
 
 
@@ -28,13 +28,13 @@ Task targets, files and options may be specified according to the grunt [Configu
 
 #### resDir
 Type: `String`  
-(required)
+(Required)
 
 Sets the base directory to find resource files.
 
 #### resReg
 Type: `Array`  
-(required)
+(Required)
 
 Sets regular expressions to find reference urls in target files.
 Example: `[ /\.\.\/(images\/[^.]+\.(?:png|gif|jpg))(\??)/g ]`, the first parentheses should match resource path which relative to `resDir`, and the sececond parentheses should match an optional query question mark.

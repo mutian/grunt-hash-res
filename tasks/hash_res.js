@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       var fileContent = grunt.file.read(path);
       var md5 = crypto.createHash('md5').update(fileContent).digest('hex');
       hash = md5.slice(0, hashLen);
-      grunt.log.write('Hash: ' + path + ' ').ok(hash);
+      grunt.log.write(path + ' ').ok(hash);
     } else {
       grunt.log.error('Resource file not found: ' + path);
     }
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
           var dest = file.dest;
           dest = grunt.file.isDir(dest) ? dest + path.basename(src) : dest;
           grunt.file.write(dest, content);
-          grunt.log.ok('Hash to: ' + dest);
+          grunt.log.ok('File "' + dest + '" created.');
         }
       });
     });

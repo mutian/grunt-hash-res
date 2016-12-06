@@ -32,7 +32,7 @@ exports.hash_res = {
 
     var actual = grunt.file.read('tmp/css/test.css');
     var expected = grunt.file.read('test/expected/css/test.css');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'not match the expected.');
 
     test.done();
   },
@@ -41,7 +41,7 @@ exports.hash_res = {
 
     var actual = grunt.file.read('tmp/css/pages/home.css');
     var expected = grunt.file.read('test/expected/css/pages/home.css');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'not match the expected.');
 
     test.done();
   },
@@ -50,7 +50,7 @@ exports.hash_res = {
 
     var actual = grunt.file.read('tmp/html/home.html');
     var expected = grunt.file.read('test/expected/html/home.html');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'not match the expected.');
 
     test.done();
   },
@@ -59,7 +59,7 @@ exports.hash_res = {
 
     var actual = grunt.file.read('tmp/html/global/header.html');
     var expected = grunt.file.read('test/expected/html/global/header.html');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'not match the expected.');
 
     test.done();
   }
