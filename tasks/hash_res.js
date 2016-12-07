@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       return hashedRes[path];
     }
 
-    if (grunt.file.exists(path)) {
+    if (grunt.file.isFile(path)) {
       var fileContent = grunt.file.read(path);
       var md5 = crypto.createHash('md5').update(fileContent).digest('hex');
       hash = md5.slice(0, hashLen);
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 
     this.files.forEach(function(file) {
       file.src.forEach(function(src) {
-        if (! grunt.file.exists(src)) {
+        if (! grunt.file.isFile(src)) {
           grunt.log.error('Source file not found: "' + src + '"');
         }
 
